@@ -32,9 +32,6 @@ ahuzHashima = 3.25
 miflagaList = []
 reshimaList = []
 
-def modedNext(reshima):
-    (reshima.votes / (reshima.mandats + reshima.odafim + 1))
-
 def displayMandats(miflagaList, reshimaList, ahuzHashima):
     totalVotes = sum([miflaga.votes for miflaga in miflagaList])
     passingMiflagot = [miflaga for miflaga in miflagaList if (miflaga.votes > totalVotes * ahuzHashima / 100)]
